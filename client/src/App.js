@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import logo from './pictures/Logo.png'
 import './App.css';
+import Login from './components/Login';
+import Menu from './components/Menu';
+import home from './components/Home';
+import nextMatchup from './components/nextMatchup';
+import settings from './components/Settings';
+import importData from './components/importData';
 
 class App extends Component {
   render() {
     return (
+      <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Route exact path = "/login" render = {props =>(
+          <React.Fragment>
+            <img src={logo} alt = "logo" width = {350} height = {250}/>
+            <Login/>
+          </React.Fragment>
+        )} />
+        <Route path = "/home" component= {home}/>
+        <Route path = "/nextMatchup" component= {nextMatchup}/>
+        <Route path = "/importData" component= {importData}/>
+        <Route path = "/settings" component= {settings}/>
+        
+        
+        <Menu/>
+        {/* <Menu/> */}
       </div>
+      </Router>
     );
   }
 }
