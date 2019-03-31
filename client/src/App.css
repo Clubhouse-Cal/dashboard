@@ -13,3 +13,22 @@ a {
   color: #333;
   text-decoration: none;
 }
+
+.list {
+  display: flex;
+  flex-Direction: column;
+  /* justify-Content: space-between; */
+  height: 700px;
+  width: 200px;
+  background-color: #003366;
+
+
+}
+
+.path {
+  margin: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}

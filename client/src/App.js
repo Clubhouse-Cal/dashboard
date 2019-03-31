@@ -20,7 +20,7 @@ class App extends Component {
             <Login/>
           </React.Fragment>
         )} />
-        <Route path = "/home" component= {home}/>
+        <Route style = {pathStyle} path = "/home" component= {home}/>
         <Route path = "/nextMatchup" component= {nextMatchup}/>
         <Route path = "/importData" component= {importData}/>
         <Route path = "/settings" component= {settings}/>
@@ -32,6 +32,11 @@ class App extends Component {
       </Router>
     );
   }
+}
+
+const pathStyle = {
+  backgroundColor: '#fff',
+  fontSize: '200px'
 }
 
 export default App;
