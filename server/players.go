@@ -4,12 +4,16 @@ import (
 	"net/http"
 	"os/exec"
 
+	"github.com/elgs/gosqljson"
 	"github.com/gin-gonic/gin"
 )
 
 type Player struct {
 	firstname string `json:"firstname"`
 	lastname  string `json:"lastname"`
+	team      string `json:"team"`
+	height    int    `json:"height"`
+	weight    int    `json:"weight"`
 }
 
 func CreatePlayerTable() {
@@ -30,14 +34,13 @@ func CreatePlayerTable() {
 	if _, err := db.Exec(query); err != nil {
 		panic(err)
 	}
-
 }
 
 func GetPlayers(c *gin.Context) {
-	query := `SELECT * from players`
-	rows, err := db.Query(query)
+	_, data, err := gosqljson.QueryDbToArray(db, "lower", "SELECT * from players;")
 	if err != nil {
 		panic(err)
 	}
-	c.JSON(http.StatusOK, gin.H{"status": http.StatusOK, "data": rows})
+
+	c.JSON(http.StatusOK, gin.H{"status": http.StatusOK, "data": data})
 }

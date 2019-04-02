@@ -4,12 +4,7 @@
 * install Go https://golang.org/doc/install
 * install dep https://github.com/golang/dep
 * install Docker https://docs.docker.com/docker-for-mac/install/
-* clone this repo into ~/go/src/github.com/Clubhouse-Cal/
-* run the following to install dependencies
-
-```bash
-$ dep ensure
-```
+* clone this repo into $GOPATH/src/github.com/Clubhouse-Cal/
 
 * Then run the following to start the Docker container running mysql
 
