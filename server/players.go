@@ -8,14 +8,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type Player struct {
-	firstname string `json:"firstname"`
-	lastname  string `json:"lastname"`
-	team      string `json:"team"`
-	height    int    `json:"height"`
-	weight    int    `json:"weight"`
-}
-
 func CreatePlayerTable() {
 	cmd := exec.Command("docker", "cp", "data/players.csv", "clubhouseDb:/var/lib/mysql-files/players.csv")
 	if err := cmd.Run(); err != nil {
@@ -25,12 +17,13 @@ func CreatePlayerTable() {
 	if _, err := db.Exec(query); err != nil {
 		panic(err)
 	}
-	query = `CREATE TABLE players (lastname VARCHAR(50), firstname VARCHAR(50));`
+	query = `CREATE TABLE players (number INT, lastname VARCHAR(50), firstname VARCHAR(50), position VARCHAR(50), 
+			height VARCHAR(50), weight INT, year VARCHAR(50), hometown VARCHAR(250));`
 	if _, err := db.Exec(query); err != nil {
 		panic(err)
 	}
 	query = `LOAD DATA INFILE '/var/lib/mysql-files/players.csv' INTO TABLE players FIELDS TERMINATED BY ',' 
-			LINES TERMINATED BY '\n' IGNORE 1 ROWS (lastname, firstname);`
+			LINES TERMINATED BY '\n' IGNORE 1 ROWS (number, lastname, firstname, position, height, weight, year, hometown);`
 	if _, err := db.Exec(query); err != nil {
 		panic(err)
 	}

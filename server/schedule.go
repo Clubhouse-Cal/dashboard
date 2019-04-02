@@ -8,9 +8,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type Game struct {
-}
-
 func CreateScheduleTable() {
 	cmd := exec.Command("docker", "cp", "data/schedule.csv", "clubhouseDb:/var/lib/mysql-files/schedule.csv")
 	if err := cmd.Run(); err != nil {

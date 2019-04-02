@@ -8,11 +8,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type TrackmanRow struct {
-	firstname string `json:"firstname"`
-	lastname  string `json:"lastname"`
-}
-
 func CreateTrackmanTable() {
 	cmd := exec.Command("docker", "cp", "data/trackman.csv", "clubhouseDb:/var/lib/mysql-files/trackman.csv")
 	if err := cmd.Run(); err != nil {
