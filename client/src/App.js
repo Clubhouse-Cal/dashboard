@@ -4,39 +4,36 @@ import logo from './pictures/Logo.png'
 import './App.css';
 import Login from './components/Login';
 import Menu from './components/Menu';
-import home from './components/Home';
-import nextMatchup from './components/nextMatchup';
-import settings from './components/Settings';
-import importData from './components/importData';
+import Home from './components/Home';
+import NextMatchup from './components/nextMatchup';
+import Settings from './components/Settings';
+import ImportData from './components/importData';
 
 class App extends Component {
   render() {
     return (
       <Router>
       <div className="App">
+      <Menu/>
         <Route exact path = "/login" render = {props =>(
           <React.Fragment>
-            <img src={logo} alt = "logo" width = {350} height = {250}/>
+            {/* <img src={logo} alt = "logo" width = {350} height = {250}/> */}
             <Login/>
           </React.Fragment>
         )} />
-        <Route style = {pathStyle} path = "/home" component= {home}/>
-        <Route path = "/nextMatchup" component= {nextMatchup}/>
-        <Route path = "/importData" component= {importData}/>
-        <Route path = "/settings" component= {settings}/>
+        <Route path = "/home" component= {Home}/>
+        <Route path = "/nextMatchup" component= {NextMatchup}/>
+        <Route path = "/importData" component= {ImportData}/>
+        <Route path = "/settings" component= {Settings}/>
         
         
-        <Menu/>
-        {/* <Menu/> */}
+        
       </div>
       </Router>
     );
   }
 }
 
-const pathStyle = {
-  backgroundColor: '#fff',
-  fontSize: '200px'
-}
+
 
 export default App;

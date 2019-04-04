@@ -1,5 +1,8 @@
-import React, { Component } from 'react'
-import Menu from './Menu';
+import React, { Component } from 'react';
+//import Menu from './Menu';
+import PlayerScroll from './playerScroll';
+import Dropdown from './dropdown';
+
 
 export class Home extends Component {
   componentDidMount() {
@@ -8,9 +11,15 @@ export class Home extends Component {
 
   render() {
     return (
-      <React.Fragment>
-          <p>Home</p>
-      </React.Fragment>
+      <div className = "page">
+          <p className = "title">Home</p>
+          <p> Filter by: </p>
+          <div className = "dropdown">
+          <Dropdown/>
+          </div>
+          
+          <PlayerScroll/>
+      </div>
     )
   }
 }

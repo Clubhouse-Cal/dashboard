@@ -14,6 +14,24 @@ a {
   text-decoration: none;
 }
 
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+.bar {
+  background-color: #003366;
+  height: 700px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
 .list {
   display: flex;
   flex-Direction: column;
@@ -31,4 +49,50 @@ a {
   display: flex;
   align-items: center;
   font-size: 17px;
+}
+
+.page {
+  width: 100%;
+  
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  font-size: 30px;
+}
+
+.portrait{
+  width: 125px;
+  height: 175px;
+}
+
+.playerName {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.playerScroll {
+  display: flex;
+  flex-direction: r;
+}
+
+/* .dropdown {
+  background-color: black;
+  color: white;
+} */
+
+.selectBox {
+  outline-style: solid;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
 }

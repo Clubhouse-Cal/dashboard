@@ -3,11 +3,11 @@ import React, { Component } from 'react'
 export class importData extends Component {
   render() {
     return (
-      <React.Fragment>
-          <p>
+      <div className = "page">
+          <p className = "title">
               import Data
           </p>
-      </React.Fragment>
+      </div>
     )
   }
 }

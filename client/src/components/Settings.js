@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 export class Settings extends Component {
   render() {
     return (
-      <React.Fragment>
-        <p>settings</p>
-      </React.Fragment>
+      <div className = "page">
+        <p className = "title" > settings</p>
+      </div>
 
     )
   }
