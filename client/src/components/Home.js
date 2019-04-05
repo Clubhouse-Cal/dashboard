@@ -3,11 +3,23 @@ import React, { Component } from 'react';
 import PlayerScroll from './playerScroll';
 import Dropdown from './dropdown';
 
-
 export class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      players: [],
+    };
+  }
+
   componentDidMount() {
     fetch('/api/players')
-  }
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          players: data.data,
+        })
+      });
+}
 
   render() {
     return (
