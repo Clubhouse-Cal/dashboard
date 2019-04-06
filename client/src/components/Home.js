@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 //import Menu from './Menu';
 import PlayerScroll from './playerScroll';
 import Dropdown from './dropdown';
+import TeamPreview from './teamPreview'
 
 export class Home extends Component {
   constructor() {
     super();
     this.state = {
       players: [],
+      playerFirstLastName: []
     };
   }
 
@@ -17,6 +19,7 @@ export class Home extends Component {
       .then(data => {
         this.setState({
           players: data.data,
+          playerFirstLastName: data.data.map(d => [d[2],d[1]]),
         })
       });
 }
@@ -25,12 +28,16 @@ export class Home extends Component {
     return (
       <div className = "page">
           <p className = "title">Home</p>
-          <p> Filter by: </p>
           <div className = "dropdown">
-          <Dropdown/>
+            <p> Filter by: </p>
+            <Dropdown/>
+          </div>
+          <div className = "playerScroll">
+            <PlayerScroll  names={this.state.playerFirstLastName}/>
           </div>
           
-          <PlayerScroll/>
+          <p> Upcoming game on 10/14/2018</p>
+          <TeamPreview/>
       </div>
     )
   }

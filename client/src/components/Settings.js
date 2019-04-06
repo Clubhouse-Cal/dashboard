@@ -4,7 +4,7 @@ export class Settings extends Component {
   render() {
     return (
       <div className = "page">
-        <p className = "title" > settings</p>
+        <p className = "title" > Settings</p>
       </div>
 
     )

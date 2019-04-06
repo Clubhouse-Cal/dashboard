@@ -52,9 +52,9 @@ a {
 }
 
 .page {
-  width: 100%;
+  width: 80%;
   
-  margin-left: 200px;
+  /* margin-left: 100px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,6 +70,7 @@ a {
 .portrait{
   width: 125px;
   height: 175px;
+  border-radius: 25px;
 }
 
 .playerName {
@@ -78,21 +79,51 @@ a {
   justify-content: center;
 }
 
-.playerScroll {
-  display: flex;
-  flex-direction: r;
+.playerCard {
+  margin: 10px;
+  
+
 }
 
-/* .dropdown {
-  background-color: black;
-  color: white;
-} */
-
-.selectBox {
-  outline-style: solid;
-  width: 200px;
+.playerScroll {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
-  justify-content: center;
+  overflow: scroll;
+  width: 100%;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.teamPreview {
+  width: 400px;
+  height: 300px;
+  background-color: whiteSmoke;
+
+}
+.teamName {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.genStats{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.teamLeaders{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.leaders{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

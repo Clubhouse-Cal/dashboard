@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import 'semantic-ui-css/semantic.min.css';
+
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import logo from './pictures/Logo.png'
 import './App.css';
@@ -8,6 +11,8 @@ import Home from './components/Home';
 import NextMatchup from './components/nextMatchup';
 import Settings from './components/Settings';
 import ImportData from './components/importData';
+
+//ReactDOM.render(<App />, document.getElementById('root'));
 
 class App extends Component {
   render() {
