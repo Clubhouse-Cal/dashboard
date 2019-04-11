@@ -11,7 +11,7 @@ export class Menu extends Component {
   render() {
     return (
       <div className = "bar">
-      <img src={logo} alt = "logo" width = {200} height = {200}/>
+      <img className = "symbol" src={logo} alt = "logo"/>
       <Link className = "path" to = "/login"> Login </Link>  
         <div className = "list">
           
@@ -19,6 +19,10 @@ export class Menu extends Component {
           <Link className = "path" to = "/home"> 
           <img src = {home} width = {30} height = {30}/>
           Home
+          </Link>  
+          <Link className = "path" to = "/playerStats"> 
+          <img src = {home} width = {30} height = {30}/>
+          Player Statistics
           </Link>  
           <Link className = "path" to = "/nextMatchup">
           <img src = {nm} width = {30} height = {30}/>

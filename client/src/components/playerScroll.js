@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import Playercard from './playercard';
 
 export class playerScroll extends Component {
+  // constructor(props){
+  //   super(props)
+  // }
+  
   render() {
-    return (
-    <div className = "playerScroll">
-        <Playercard/>
-        <Playercard/>
-        <Playercard/>
-        <Playercard/>
+    return this.props.names.map(name=>
+    <div>
+        <Playercard name={name}/>
     </div>
-    )
+    );
   }
 }
 
