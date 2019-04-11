@@ -7,7 +7,7 @@ export class playerScroll extends Component {
   // }
   
   render() {
-    return this.props.names.map((name, index)=>
+    return this.props.names.map(name=>
     <div>
         <Playercard name={name}/>
     </div>

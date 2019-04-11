@@ -28,11 +28,11 @@ export class teamPreview extends Component {
           <div className = "teamLeaders">
             <div className = "leaders">
               <p>Starting Pitcher</p>
-              <Playercard/>
+              <Playercard name = {this.props.leader}/>
             </div>
             <div className = "leaders">
               <p>Top Hitters</p>
-              <Playercard/>
+              <Playercard name = {this.props.leader}/>
             </div>
 
             

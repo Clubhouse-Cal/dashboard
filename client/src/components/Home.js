@@ -9,7 +9,8 @@ export class Home extends Component {
     super();
     this.state = {
       players: [],
-      playerFirstLastName: []
+      playerFirstLastName: [],
+      leader: []
     };
   }
 
@@ -20,11 +21,13 @@ export class Home extends Component {
         this.setState({
           players: data.data,
           playerFirstLastName: data.data.map(d => [d[2],d[1]]),
+          leader: ["Arman", "Sabouri"],
         })
       });
 }
-
+ 
   render() {
+    console.log(this.state.players);
     return (
       <div className = "page">
           <p className = "title">Home</p>
@@ -33,11 +36,15 @@ export class Home extends Component {
             <Dropdown/>
           </div>
           <div className = "playerScroll">
-            <PlayerScroll  names={this.state.playerFirstLastName}/>
+            <PlayerScroll names={this.state.playerFirstLastName}/>
           </div>
           
           <p> Upcoming game on 10/14/2018</p>
-          <TeamPreview/>
+          <div className = "nextGame">
+            <TeamPreview leader = {this.state.leader}/>
+            <TeamPreview leader = {this.state.leader}/>
+          </div>
+          
       </div>
     )
   }

@@ -26,20 +26,23 @@ a {
 .bar {
   background-color: #003366;
   height: 700px;
-  width: 200px;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+}
+.symbol {
+  width: 100%;
+  
 }
 .list {
   display: flex;
   flex-Direction: column;
   /* justify-Content: space-between; */
   height: 700px;
-  width: 200px;
+  width: 100%;
   background-color: #003366;
-
 
 }
 
@@ -100,9 +103,10 @@ a {
 }
 
 .teamPreview {
-  width: 400px;
+  width: 350px;
   height: 300px;
   background-color: whiteSmoke;
+  /* margin: 50px; */
 
 }
 .teamName {
@@ -125,5 +129,41 @@ a {
 .leaders{
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.nextGame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%
+  /* align-items: space-around;*/
+
+}
+.teamSelect {
+  width: 500px;
+  height: 75px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+
+}
+.team1 {
+  background-color: blue;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.team2 {
+  background-color: gray;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
