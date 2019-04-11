@@ -11,7 +11,7 @@ func main() {
 
 	// temporarily create tables
 	models.CreatePlayerTable()
-	// models.CreateScheduleTable()
+	models.CreateScheduleTable()
 	// models.CreateTrackmanTable()
 
 	router := gin.Default()

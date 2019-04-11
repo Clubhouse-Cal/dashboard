@@ -1,36 +1,36 @@
 ﻿number,lastname,firstname,position,height,weight,year,hometown
-1,Wezniak,Sam,INF,43596,170,So.,Carlsbad Calif. / Sage Creek HS
-2,Baker,Darren,INF,36678,166,So.,Granite Bay Calif. / Jesuit HS
-3,Flower,Max,OF,43620,220,Jr.,Lafayette Calif. / Campolindo HS
-4,Elvis,Cole,C,43618,195,Fr.,Vacaville Calif. / Vacaville HS
-6,Cachola,Sam,OF,43595,196,So.,Irvine Calif. / Northwood HS
-8,Villers,Ian,RHP,43621,225,Fr.,Walnut Creek Calif. / Northgate HS
-9,Eden,Cameron,INF,43617,181,Jr.,Yuba City Calif. / Yuba City
-10,Smith,Hance,UTIL/RHP,43596,175,So.,Petaluma Calif. / Santa Rosa JC / Casa Grande HS
-14,Horn,Jared,RHP,43620,225,Jr.,Napa Calif. / Vintage HS
-15,Olson,Carson,RHP,43618,210,So.,Clovis Calif. / Buchanan HS
-16,Mcllwain,Brandon,OF,43617,195,R-So.,Newton Pa. / South Carolina
-18,Ammirato,Joe,RHP,43618,180,Fr.,San Jose Calif. / Bellarmine College Prep
-20,Vaughn,Andrew,INF/RHP,36678,214,Jr.,Santa Rosa Calif. / Maria Carrillo HS
-21,Holman,Grant,UTIL/RHP,43622,225,Fr.,Chula Vista Calif. / Eastlake HS
-22,Stoutenborough,Sam,RHP,43619,185,Fr.,Monterey Calif. / Palma HS
-23,Lagattuta,John,OF,36678,190,So.,Davis Calif. / Davis HS
-24,Mack,Connor,OF,43619,211,So.,San Jose Calif. / Bellarmine College Prep
-25,Lee,Korey,C,43617,205,Jr.,Vista Calif. / Vista HS
-26,Selma,Quentin,INF,43618,210,So.,Clovis Calif. / Buchanan HS
-27,Reyes,Rogelio,RHP,43618,175,Jr.,Union City Calif. / James Logan HS
-28,Henderson,Tommy,INF,36678,207,So.,Lafayette Calif. / Acalanes HS
-29,Wolger,Jack,LHP,43620,210,R-So.,Folsom Calif. / Jesuit HS
-30,Bock,Conner,INF,43617,210,Jr.,Newport Coast Calif. / Sage Hill HS
-31,Hinrichsen,Jack,RHP,43617,185,Fr.,Sacramento Calif. / McClatchy HS
-33,Gather,Lucas,LHP,43617,190,Fr.,Roseville Calif. / Roseville HS
-35,Sullivan,Sean,RHP,43617,165,Fr.,Woodland Hills Calif. / Chaminade College Prep
-37,Delmore,Jack,RHP,43619,235,Jr.,Alameda Calif. / Chabot JC/St. Joseph Notre Dame HS
-38,Nielsen,Garret,OF,43620,220,Fr.,Carlsbad Calif. / Christian HS
-39,Souto,Dom,C,43594,160,Fr.,Rocklin Calif. / Whitney HS
-40,Sabouri,Arman,LHP,43595,200,Jr.,San Jose Calif. / Branham HS
-41,Drogin,Reuben,RHP,43595,210,So.,Berkeley Calif. / Berkeley HS
-44,Atkins,Blake,INF,43595,160,Fr.,Mariposa Calif. / Mariposa County HS
-47,Proctor,Nick,UTIL/RHP,43594,190,Fr.,Pleasanton Calif. / Amador Valley HS
-48,Oswalt,Connor,LHP,43596,165,Fr.,Winnetka Calif. / Grover Cleveland HS
-49,Scott,Mitchell,RHP,43618,210,Fr.,San Mateo Calif. / Serra HS
+1,Wezniak,Sam,INF,"5'11""",170,So.,Carlsbad Calif. / Sage Creek HS
+2,Baker,Darren,INF,"6'0""",166,So.,Granite Bay Calif. / Jesuit HS
+3,Flower,Max,OF,"6'4""",220,Jr.,Lafayette Calif. / Campolindo HS
+4,Elvis,Cole,C,"6'2""",195,Fr.,Vacaville Calif. / Vacaville HS
+6,Cachola,Sam,OF,"5'10""",196,So.,Irvine Calif. / Northwood HS
+8,Villers,Ian,RHP,"6'5""",225,Fr.,Walnut Creek Calif. / Northgate HS
+9,Eden,Cameron,INF,"6'1""",181,Jr.,Yuba City Calif. / Yuba City
+10,Smith,Hance,UTIL/RHP,"5'11""",175,So.,Petaluma Calif. / Santa Rosa JC / Casa Grande HS
+14,Horn,Jared,RHP,"6'4""",225,Jr.,Napa Calif. / Vintage HS
+15,Olson,Carson,RHP,"6'2""",210,So.,Clovis Calif. / Buchanan HS
+16,Mcllwain,Brandon,OF,"6'1""",195,R-So.,Newton Pa. / South Carolina
+18,Ammirato,Joe,RHP,"6'2""",180,Fr.,San Jose Calif. / Bellarmine College Prep
+20,Vaughn,Andrew,INF/RHP,"6'0""",214,Jr.,Santa Rosa Calif. / Maria Carrillo HS
+21,Holman,Grant,UTIL/RHP,"6'6""",225,Fr.,Chula Vista Calif. / Eastlake HS
+22,Stoutenborough,Sam,RHP,"6'3""",185,Fr.,Monterey Calif. / Palma HS
+23,Lagattuta,John,OF,"6'0""",190,So.,Davis Calif. / Davis HS
+24,Mack,Connor,OF,"6'3""",211,So.,San Jose Calif. / Bellarmine College Prep
+25,Lee,Korey,C,"6'1""",205,Jr.,Vista Calif. / Vista HS
+26,Selma,Quentin,INF,"6'2""",210,So.,Clovis Calif. / Buchanan HS
+27,Reyes,Rogelio,RHP,"6'2""",175,Jr.,Union City Calif. / James Logan HS
+28,Henderson,Tommy,INF,"6'0""",207,So.,Lafayette Calif. / Acalanes HS
+29,Wolger,Jack,LHP,"6'4""",210,R-So.,Folsom Calif. / Jesuit HS
+30,Bock,Conner,INF,"6'1""",210,Jr.,Newport Coast Calif. / Sage Hill HS
+31,Hinrichsen,Jack,RHP,"6'1""",185,Fr.,Sacramento Calif. / McClatchy HS
+33,Gather,Lucas,LHP,"6'1""",190,Fr.,Roseville Calif. / Roseville HS
+35,Sullivan,Sean,RHP,"6'1""",165,Fr.,Woodland Hills Calif. / Chaminade College Prep
+37,Delmore,Jack,RHP,"6'3""",235,Jr.,Alameda Calif. / Chabot JC/St. Joseph Notre Dame HS
+38,Nielsen,Garret,OF,"6'4""",220,Fr.,Carlsbad Calif. / Christian HS
+39,Souto,Dom,C,"5'9""",160,Fr.,Rocklin Calif. / Whitney HS
+40,Sabouri,Arman,LHP,"5'10""",200,Jr.,San Jose Calif. / Branham HS
+41,Drogin,Reuben,RHP,"5'10""",210,So.,Berkeley Calif. / Berkeley HS
+44,Atkins,Blake,INF,"5'10""",160,Fr.,Mariposa Calif. / Mariposa County HS
+47,Proctor,Nick,UTIL/RHP,"5'9""",190,Fr.,Pleasanton Calif. / Amador Valley HS
+48,Oswalt,Connor,LHP,"5'11""",165,Fr.,Winnetka Calif. / Grover Cleveland HS
+49,Scott,Mitchell,RHP,"6'2""",210,Fr.,San Mateo Calif. / Serra HS
