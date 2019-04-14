@@ -17,12 +17,14 @@ func CreateScheduleTable() {
 	if _, err := db.Exec(query); err != nil {
 		panic(err)
 	}
-	query = `CREATE TABLE schedule (lastname VARCHAR(50), firstname VARCHAR(50));`
+	query = `CREATE TABLE schedule (date VARCHAR(50), opponent VARCHAR(100), homeawayneutral VARCHAR(1), 
+			calrunsscored INT, opponentrunsscored INT);`
 	if _, err := db.Exec(query); err != nil {
 		panic(err)
 	}
 	query = `LOAD DATA INFILE '/var/lib/mysql-files/schedule.csv' INTO TABLE schedule FIELDS TERMINATED BY ',' 
-			LINES TERMINATED BY '\n' IGNORE 1 ROWS (lastname, firstname);`
+			LINES TERMINATED BY '\n' IGNORE 1 ROWS (date, opponent, homeawayneutral, 
+			calrunsscored, opponentrunsscored);`
 	if _, err := db.Exec(query); err != nil {
 		panic(err)
 	}
