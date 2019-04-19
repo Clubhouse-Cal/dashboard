@@ -23,8 +23,7 @@ func CreateScheduleTable() {
 		panic(err)
 	}
 	query = `LOAD DATA INFILE '/var/lib/mysql-files/schedule.csv' INTO TABLE schedule FIELDS TERMINATED BY ',' 
-			LINES TERMINATED BY '\n' IGNORE 1 ROWS (date, opponent, homeawayneutral, 
-			calrunsscored, opponentrunsscored);`
+			LINES TERMINATED BY '\n' IGNORE 1 ROWS;`
 	if _, err := db.Exec(query); err != nil {
 		panic(err)
 	}
