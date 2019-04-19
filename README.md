@@ -1,6 +1,6 @@
-# dashboard
+# Cal Clubhouse dashboard
 
-# Steps to setup the backend development environment
+## Steps to setup the backend development environment
 * install Go https://golang.org/doc/install
 * install dep https://github.com/golang/dep
 * install Docker https://docs.docker.com/docker-for-mac/install/
@@ -28,3 +28,9 @@ $ mysql -uroot
 ```bash
 $ go run main.go
 ```
+## Helpful Links
+* [Explanation of how to interpret raw Trackman data](https://trackman.zendesk.com/hc/en-us/articles/115002776647-Radar-Measurement-Glossary-of-Terms)
+
+## TODOs/Suggestions
+* Explore converting the backend to Python due to more ML/stats libraries available
+* Deploy into production

@@ -23,7 +23,7 @@ func CreatePlayerTable() {
 		panic(err)
 	}
 	query = `LOAD DATA INFILE '/var/lib/mysql-files/players.csv' INTO TABLE players FIELDS TERMINATED BY ',' 
-			LINES TERMINATED BY '\n' IGNORE 1 ROWS (number, lastname, firstname, position, height, weight, year, hometown);`
+			LINES TERMINATED BY '\n' IGNORE 1 ROWS;`
 	if _, err := db.Exec(query); err != nil {
 		panic(err)
 	}
