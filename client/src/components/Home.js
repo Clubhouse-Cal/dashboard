@@ -25,8 +25,8 @@ export class Home extends Component {
 //         })
 //       });
 // }
-  
- 
+
+
   render() {
     var playerFirstLastName = this.props.players.map(d => [d[2], d[1]]);
     var leader = ["Arman", "Sabouri"];
@@ -41,13 +41,13 @@ export class Home extends Component {
           <div className = "playerScroll">
             <PlayerScroll names={playerFirstLastName}/>
           </div>
-          
+
           <p> Upcoming game on 10/14/2018</p>
           <div className = "nextGame">
             <TeamPreview leader = {leader}/>
             <TeamPreview leader = {leader}/>
           </div>
-          
+
       </div>
     )
   }

@@ -36,7 +36,9 @@ class App extends Component {
 
 
   render() {
+      console.log(this.state.players)
     return (
+
       <Router>
       <div className="App">
       <Menu/>
@@ -46,9 +48,9 @@ class App extends Component {
         <Route path = "/nextMatchup" component= {NextMatchup}/>
         <Route path = "/importData" component= {ImportData}/>
         <Route path = "/settings" component= {Settings}/>
-        
-        
-        
+
+
+
       </div>
       </Router>
     );
