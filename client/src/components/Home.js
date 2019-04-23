@@ -1,34 +1,43 @@
 import React, { Component } from 'react';
-//import Menu from './Menu';
-import PlayerScroll from './playerScroll';
-import Dropdown from './dropdown';
-import TeamPreview from './teamPreview'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Menu from './Menu';
+import PlayerStatistics from './playerStats';
+import NextMatchup from './nextMatchup';
+import Settings from './Settings';
+import ImportData from './importData';
+import Homepage from './Homepage';
 
-export class Home extends Component {
+class Home extends Component {
 
+  constructor() {
+    super();
+    this.state = {
+      players: [],
+    };
+  }
+  componentDidMount() {
+    fetch('/api/players')
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          players: data.data,
+        })
+      });
+  }
 
   render() {
-    var playerFirstLastName = this.props.players.map(d => [d[2], d[1]]);
-    var playerData = this.props.players.map(d => d);
-    var leader = ["Arman", "Sabouri"];
     return (
-      <div className = "page">
-          <p className = "title">Home</p>
-          <div className = "dropdown">
-            <p> Filter by: </p>
-            <Dropdown/>
-          </div>
-          <div className = "playerScroll">
-            <PlayerScroll data = {playerData}/>
-          </div>
-
-          <p> Upcoming game on 10/14/2018</p>
-          <div className = "nextGame">
-            <TeamPreview leader = {leader}/>
-            <TeamPreview leader = {leader}/>
-          </div>
-
-      </div>
+      <React.Fragment>
+      <Router>
+        <Menu />
+      <Route path = "/home" render={(props) => (<Homepage {...props} players={this.state.players}/>)}/>
+      <Route path = "/playerStats" render={(props) => (<PlayerStatistics {...props} players={this.state.players}/>)}/>
+      <Route path = "/nextMatchup" component= {NextMatchup}/>
+      <Route path = "/importData" component= {ImportData}/>
+      <Route path = "/settings" component= {Settings}/>
+      </Router>
+      
+      </React.Fragment>
     )
   }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import pic from '../pictures/sam.jpg';
 
 export class playercard extends Component {
 
