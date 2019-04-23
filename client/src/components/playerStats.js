@@ -27,14 +27,9 @@ export class playerStats extends Component {
         var year = this.state.indPlayers[6];
         var hometown = this.state.indPlayers[7];
         console.log(firstName==null)
-<<<<<<< Updated upstream
-        if (this.state.indPlayers !=null){
-            var photoPath = "/images/photos/"+firstName.toLowerCase()+lastName.toLowerCase()+".jpg"
-=======
         if (firstName !=null){
             {/*var photoPath = "../pictures/photos/"+firstName.toLowerCase()+lastName.toLowerCase()+".jpg"*/}
             var photoPath = '../pictures/photos/samwezniak.jpg'
->>>>>>> Stashed changes
           return (
               <div className = "page">
                   <p className = "title" > Player Statistics</p>
@@ -59,9 +54,6 @@ export class playerStats extends Component {
 
                   </div>
               </div>
-<<<<<<< Updated upstream
-  
-=======
 
           )
         }
@@ -69,12 +61,10 @@ export class playerStats extends Component {
             <div className = "page">
 
             </div>
->>>>>>> Stashed changes
 
         );
 
     }
-  }
 }
 
 
