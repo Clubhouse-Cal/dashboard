@@ -17,7 +17,7 @@ export class playerStats extends Component {
     }
 
     render() {
-        console.log(this.state.indPlayers)
+        //console.log(this.state.indPlayers)
         var number = this.state.indPlayers[0];
         var firstName = this.state.indPlayers[2];
         var lastName = this.state.indPlayers[1];
@@ -27,8 +27,14 @@ export class playerStats extends Component {
         var year = this.state.indPlayers[6];
         var hometown = this.state.indPlayers[7];
         console.log(firstName==null)
+<<<<<<< Updated upstream
         if (this.state.indPlayers !=null){
             var photoPath = "/images/photos/"+firstName.toLowerCase()+lastName.toLowerCase()+".jpg"
+=======
+        if (firstName !=null){
+            {/*var photoPath = "../pictures/photos/"+firstName.toLowerCase()+lastName.toLowerCase()+".jpg"*/}
+            var photoPath = '../pictures/photos/samwezniak.jpg'
+>>>>>>> Stashed changes
           return (
               <div className = "page">
                   <p className = "title" > Player Statistics</p>
@@ -39,7 +45,7 @@ export class playerStats extends Component {
                   </div>
                   <div className = "playerBio">
                       {/* insert image here  */}
-                      <img src = {require(photoPath)} alt="helllo"></img>
+                      <img src = {require("../pictures/photos/"+firstName.toLowerCase()+lastName.toLowerCase()+".jpg")}></img>
                       <div className = "bioInfo">
                           <p> {number} {firstName + " " +lastName}</p>
                           <p> Position: {position}</p>
@@ -53,7 +59,17 @@ export class playerStats extends Component {
 
                   </div>
               </div>
+<<<<<<< Updated upstream
   
+=======
+
+          )
+        }
+        return (
+            <div className = "page">
+
+            </div>
+>>>>>>> Stashed changes
 
         );
 
