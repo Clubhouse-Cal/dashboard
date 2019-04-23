@@ -20,5 +20,7 @@ func main() {
 	api.GET("players", models.GetPlayers)
 	api.GET("schedule", models.GetSchedule)
 	api.GET("batter", models.GetBatterData)
+
+	api.POST("upload", models.UploadCsv)
 	router.Run()
 }

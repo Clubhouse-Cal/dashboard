@@ -5,11 +5,17 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"os/exec"
 	"strconv"
+	"time"
 
 	"github.com/gin-gonic/gin"
 )
+
+type Csv struct {
+	Filedata string `json:"filedata" binding:"required"`
+}
 
 func CreateTrackmanTable() {
 	query := `SELECT * from trackman limit 1;`
@@ -108,6 +114,23 @@ func GetBatterData(c *gin.Context) {
 		data[side] = stats
 	}
 	c.JSON(http.StatusOK, gin.H{"status": http.StatusOK, "data": data})
+}
+
+func UploadCsv(c *gin.Context) {
+	var csv Csv
+	fmt.Println(c.Request)
+	if err := c.BindJSON(&csv); err != nil {
+		log.Fatal(err)
+	}
+	f, err := os.Create("data/trackman/upload_" + time.Now().String() + ".csv")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+	if _, err := f.WriteString(csv.Filedata); err != nil {
+		log.Fatal(err)
+	}
+	c.JSON(http.StatusOK, gin.H{"status": http.StatusOK})
 }
 
 // data for find best pitcher
