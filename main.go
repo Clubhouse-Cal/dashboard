@@ -12,13 +12,13 @@ func main() {
 	// temporarily create tables
 	models.CreatePlayerTable()
 	models.CreateScheduleTable()
-	// models.CreateTrackmanTable()
+	models.CreateTrackmanTable()
 
 	router := gin.Default()
 
 	api := router.Group("/api")
 	api.GET("players", models.GetPlayers)
 	api.GET("schedule", models.GetSchedule)
-	api.GET("trackman", models.GetTrackmanData)
+	api.GET("batter", models.GetBatterData)
 	router.Run()
 }
