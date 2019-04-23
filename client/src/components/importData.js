@@ -1,5 +1,5 @@
 import React, { Component, useCallback, useMemo } from 'react'
-import { Image, Header, Button } from 'semantic-ui-react'
+import { Image, Header, Button, Icon } from 'semantic-ui-react'
 import { useDropzone } from 'react-dropzone'
 
 const baseStyle = {
@@ -45,10 +45,6 @@ function Basic(props) {
 
       fetch('http://localhost:8080/api/upload', {
         method: 'POST',
-        // headers: {
-        //   'Accept': 'application/json',
-        //   'Content-Type': 'application/json',
-        // },
         body: JSON.stringify({
           filedata: binaryStr,
         })
@@ -74,9 +70,7 @@ function Basic(props) {
     ]);
   
   const files = acceptedFiles.map(file => (
-    <li key={file.path}>
-      {file.path} - {file.size} bytes
-    </li>
+      <Header as='h5'>{file.path} <Icon color='green' name='checkmark' /></Header>
   ));
 
   return (
@@ -85,29 +79,14 @@ function Basic(props) {
         <input {...getInputProps()} />
         <p>Drag 'n' drop some files here, or click to select files</p>
       </div>
-      <aside>
-        <h4>Files</h4>
-        <ul>{files}</ul>
-      </aside>
+      <div>
+        <h4>{files}</h4>
+      </div>
     </section>
   );
 }
 
 export class importData extends Component {
-  // handleFileUpload(ev) {
-  //   ev.preventDefault();
-
-  //   const data = new FormData();
-  //   data.append('filedata', this.uploadInput.filedata);
-  //   data.append('filename', this.uploadInput.filename);
-
-  //   fetch('http://localhost:8080/upload', {
-  //     method: 'POST',
-  //     body: data,
-  //   });
-  // }
-
-    
   render() {
     return (
       <div className = "page">

@@ -118,7 +118,6 @@ func GetBatterData(c *gin.Context) {
 
 func UploadCsv(c *gin.Context) {
 	var csv Csv
-	fmt.Println(c.Request)
 	if err := c.BindJSON(&csv); err != nil {
 		log.Fatal(err)
 	}
