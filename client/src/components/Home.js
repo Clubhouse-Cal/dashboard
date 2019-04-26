@@ -6,6 +6,7 @@ import NextMatchup from './nextMatchup';
 import Settings from './Settings';
 import ImportData from './importData';
 import Homepage from './Homepage';
+import PitcherAnalysis from './pitcherAnalysis'
 
 class Home extends Component {
 
@@ -33,6 +34,7 @@ class Home extends Component {
       <Route exact path = "/home" render={(props) => (<Homepage {...props} players={this.state.players}/>) }/>
       <Route path = "/playerStats" render={(props) => (<PlayerStatistics {...props} players={this.state.players}/>)}/>
       <Route path = "/nextMatchup" component= {NextMatchup}/>
+      <Route path = "/pitcherAnalysis" component= {PitcherAnalysis}/>
       <Route exact path = "/importData" component= {ImportData}/>
       <Route path = "/settings" component= {Settings}/>
       </Router>

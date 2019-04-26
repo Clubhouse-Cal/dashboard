@@ -230,3 +230,29 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.startPitchTitle {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.playerName {
+  font-size: 20px;
+}
+
+.generateButton {
+  margin-top: 100px;
+  background-color: #003366;
+  width: 150px;
+  height: 70px;
+  
+  /* align-content: center; */
+}
+.text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

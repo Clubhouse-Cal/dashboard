@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Header } from 'semantic-ui-react'
+import { Header, Image } from 'semantic-ui-react'
+import {Link} from 'react-router-dom';
 
 export class nextMatchup extends Component {
   render() {
@@ -14,6 +15,24 @@ export class nextMatchup extends Component {
           <p className = "team2">
             Utah
           </p>
+        </div>
+        <div className = "startPitchTitle">
+          <p> <b> Starting Pitcher </b></p>
+        </div>
+        
+        <Image src = "/images/photos/armansabouri.jpg"></Image>
+        <div className = "playerName">
+        <p>Arman Sabouri</p>
+        </div>
+        
+        <div className = "generateButton">
+          <Link to = './pitcherAnalysis'>
+          <div className = "text">
+            View Pitcher Analysis
+          </div>
+         
+          </Link>
+        
         </div>
     </div>
     )
