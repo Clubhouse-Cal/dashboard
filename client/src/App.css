@@ -145,7 +145,7 @@ a {
 
 }
 .team1 {
-  background-color: blue;
+  background-color: #003366;
   width: 50%;
   height: 100%;
   display: flex;
@@ -168,10 +168,20 @@ a {
   width: 100%;
   justify-content: space-around;
 }
-.timeFrameButton {
+.timeFrameButtonSelected {
   width: 150px;
   height: 50px;
-  background-color: blue;
+  background-color: #003366;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeFrameButtonNotSelected {
+  width: 150px;
+  height: 50px;
+  background-color: gray;
   color: white;
   display: flex;
   justify-content: center;

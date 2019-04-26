@@ -33,9 +33,9 @@ export class playerStats extends Component {
               <div className = "page">
                   <Header as='h1'> Player Statistics </Header>
                   <div className = "timeFrame">
-                      <p className = "timeFrameButton"> Last Game</p>
-                      <p className = "timeFrameButton"> This Season</p>
-                      <p className = "timeFrameButton"> Career</p>
+                      <p className = "timeFrameButtonNotSelected"> Last Game</p>
+                      <p className = "timeFrameButtonSelected"> This Season</p>
+                      <p className = "timeFrameButtonNotSelected"> Career</p>
                   </div>
                   <div className = "playerBio">
                     <div className = "card">

@@ -6,13 +6,13 @@ export class nextMatchup extends Component {
     return (
       <div className = "page">
         <Header as='h1'>Next Matchup</Header>
-        <Header as='h3'>Upcoming game on 10/14/2018</Header>
+        <Header as='h3'>Upcoming game on 5/3/2019</Header>
         <div className = "teamSelect">
           <p className = "team1">
             Cal
           </p>
           <p className = "team2">
-            UCSB
+            Utah
           </p>
         </div>
     </div>
