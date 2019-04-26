@@ -4,10 +4,11 @@ import { Header } from 'semantic-ui-react'
 
 export class teamPreview extends Component {
   render() {
+    // console.log(this.props.hitter)
     return (
       <div className = "teamPreview">
           <div className = "teamName">
-            <Header as='h4'>California Golden Bears </Header>
+            <Header as='h4'>{this.props.school} </Header>
             <p> ( 1-0 )</p>
           </div>
 
@@ -33,7 +34,7 @@ export class teamPreview extends Component {
             </div>
             <div className = "leaders">
               <p>Top Hitters</p>
-              <Playercard name = {this.props.leader}/>
+              <Playercard name = {this.props.hitter}/>
             </div>
 
 

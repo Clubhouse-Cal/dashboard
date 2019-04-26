@@ -23,6 +23,9 @@ class Homepage extends Component {
 }
   render () {
     var leader = ["Arman", "Sabouri"];
+    var hitter = ["Andrew", "Vaughn"];
+    var leader1 = ["Oliver", "Dunn"];
+    var hitter1 = ["Zac", "McCleve"];
     // index of upcoming game in schedule
     var upcomingIndex = 36
     var upcomingGameDate = "April 26"
@@ -46,9 +49,9 @@ class Homepage extends Component {
 
           <Header as='h2'>Upcoming game on {upcomingGameDate}</Header>
           <div className = "nextGame">
-            <TeamPreview leader = {leader}/>
+            <TeamPreview school = {'California Golden Bears'} leader = {leader} hitter = {hitter}/>
             <Header as='h1' style={{fontSize: '100px'}}>{homeaway}</Header>
-            <TeamPreview leader = {leader}/>
+            <TeamPreview school = {'Utah Utes'} leader = {leader1} hitter = {hitter1}/>
           </div>
 
         </div>
