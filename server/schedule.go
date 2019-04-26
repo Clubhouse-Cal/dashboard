@@ -34,6 +34,25 @@ func GetSchedule(c *gin.Context) {
 	if err != nil {
 		panic(err)
 	}
-
 	c.JSON(http.StatusOK, gin.H{"status": http.StatusOK, "data": data})
 }
+
+// func GetPreviousGame(c *gin.Context) {
+// 	// hardcode in previous game
+// 	_, data, err := gosqljson.QueryDbToArray(db, "lower", "SELECT * from schedule where date='29-Apr';")
+// 	if err != nil {
+// 		panic(err)
+// 	}
+
+// 	c.JSON(http.StatusOK, gin.H{"status": http.StatusOK, "data": data})
+// }
+
+// func GetNextGame(c *gin.Context) {
+// 	// hardcode in next game
+// 	_, data, err := gosqljson.QueryDbToArray(db, "lower", "SELECT * from schedule where date='3-May';")
+// 	if err != nil {
+// 		panic(err)
+// 	}
+
+// 	c.JSON(http.StatusOK, gin.H{"status": http.StatusOK, "data": data})
+// }

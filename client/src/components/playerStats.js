@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Header } from 'semantic-ui-react'
+import { Header, Image } from 'semantic-ui-react'
 
 export class playerStats extends Component {
     constructor() {
@@ -28,19 +28,17 @@ export class playerStats extends Component {
         var hometown = this.state.indPlayers[7];
         console.log(firstName==null)
         if (firstName !=null){
-            {/*var photoPath = "../pictures/photos/"+firstName.toLowerCase()+lastName.toLowerCase()+".jpg"*/}
-            var photoPath = '../pictures/photos/samwezniak.jpg'
+            var photoPath = "/images/photos/"+firstName.toLowerCase()+lastName.toLowerCase()+".jpg"
           return (
               <div className = "page">
-                  <p className = "title" > Player Statistics</p>
+                  <Header as='h1'> Player Statistics </Header>
                   <div className = "timeFrame">
                       <p className = "timeFrameButton"> Last Game</p>
                       <p className = "timeFrameButton"> This Season</p>
                       <p className = "timeFrameButton"> Career</p>
                   </div>
                   <div className = "playerBio">
-                      {/* insert image here  */}
-                      <img src = {require("../pictures/photos/"+firstName.toLowerCase()+lastName.toLowerCase()+".jpg")}></img>
+                      <Image src={photoPath} size='medium'/>
                       <div className = "bioInfo">
                           <p> {number} {firstName + " " +lastName}</p>
                           <p> Position: {position}</p>
@@ -48,8 +46,8 @@ export class playerStats extends Component {
                           <p> Weight: {weight} </p>
                           <p> Class: {year}</p>
                           <p> Hometown/ Last School: {hometown}</p>
-
                       </div>
+                      <Image src='/images/armanstats.png'/>
 
 
                   </div>

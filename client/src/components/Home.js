@@ -30,7 +30,7 @@ class Home extends Component {
       <React.Fragment>
       <Router>
         <Menu />
-      <Route exact path = "/home" render={(props) => (<Homepage {...props} players={this.state.players}/>)}/>
+      <Route exact path = "/home" render={(props) => (<Homepage {...props} players={this.state.players}/>) }/>
       <Route path = "/playerStats" render={(props) => (<PlayerStatistics {...props} players={this.state.players}/>)}/>
       <Route path = "/nextMatchup" component= {NextMatchup}/>
       <Route exact path = "/importData" component= {ImportData}/>

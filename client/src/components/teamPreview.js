@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import Playercard from './playercard'
+import { Header } from 'semantic-ui-react'
 
 export class teamPreview extends Component {
   render() {
     return (
       <div className = "teamPreview">
           <div className = "teamName">
-            <p>California Golden Bears</p>
+            <Header as='h4'>California Golden Bears </Header>
             <p> ( 1-0 )</p>
           </div>
 
@@ -28,11 +29,11 @@ export class teamPreview extends Component {
           <div className = "teamLeaders">
             <div className = "leaders">
               <p>Starting Pitcher</p>
-              //<Playercard name = {this.props.leader}/>
+              <Playercard name = {this.props.leader}/>
             </div>
             <div className = "leaders">
               <p>Top Hitters</p>
-              //<Playercard name = {this.props.leader}/>
+              <Playercard name = {this.props.leader}/>
             </div>
 
 
