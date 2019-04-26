@@ -27,15 +27,16 @@ class Homepage extends Component {
     var leader1 = ["Oliver", "Dunn"];
     var hitter1 = ["Zac", "McCleve"];
     // index of upcoming game in schedule
-    var upcomingIndex = 36
-    var upcomingGameDate = "April 26"
+    var upcomingIndex = 41
+    var upcomingGameDate = "May 3"
     var upcomingGame = this.state.schedule[upcomingIndex]
-    // var test = upcomingGame[2]
-    // console.log(upcomingGame[2])
-    var homeaway = "vs."
-    // if (upcomingGame[2] == "A") {
-    //   homeaway = "@"
-    // }
+    if (upcomingGame != null) {
+      console.log(upcomingGame)
+      var homeaway = "vs."
+      if (upcomingGame[2] == "A") {
+        homeaway = "@"
+      }
+    }
     return (
       <div className = "page">
           <Header as='h1' >California Golden Bears Baseball 2019</Header>
