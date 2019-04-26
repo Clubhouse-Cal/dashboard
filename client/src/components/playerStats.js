@@ -38,15 +38,22 @@ export class playerStats extends Component {
                       <p className = "timeFrameButton"> Career</p>
                   </div>
                   <div className = "playerBio">
-                      <Image src={photoPath} size='medium'/>
-                      <div className = "bioInfo">
-                          <p> {number} {firstName + " " +lastName}</p>
-                          <p> Position: {position}</p>
-                          <p> Height: {height}</p>
-                          <p> Weight: {weight} </p>
-                          <p> Class: {year}</p>
-                          <p> Hometown/ Last School: {hometown}</p>
-                      </div>
+                    <div className = "card">
+                        <div className= "back">
+                            <Image src={photoPath} width='200px' height = '275px;'/>
+                            <div className = "bioInfo">
+                                <div className = "name">
+                                    <p> {'#' + number} {firstName + " " +lastName}</p>
+                                </div>
+                                <p> <b>Position:</b> {position}</p>
+                                <p> <b>Height:</b> 5'11"</p>
+                                <p> <b>Weight:</b> {weight} </p>
+                                <p> <b>Class:</b> {year}</p>
+                                <p> <b>Hometown/ Last School:</b> {hometown}</p>
+                            </div>
+                        </div>
+                    </div>
+                      
                       <Image src='/images/armanstats.png'/>
 
 

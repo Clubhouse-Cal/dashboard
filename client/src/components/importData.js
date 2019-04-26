@@ -90,9 +90,19 @@ export class importData extends Component {
   render() {
     return (
       <div className = "page">
+          
           <Header as='h1' style={{fontSize: '30px'}}>Import Data</Header>
-          <Image src='/images/trackman.jpg' size='medium'/>
-          <Basic/>
+          <div className = "importData">
+            <div className = "src">
+            <Image src='/images/trackman.jpg' size='medium'/>
+            <Basic/>
+            </div>
+            <div className = "src">
+            <Image src='/images/rapsodo-baseball.png' width= '225px'/>
+            <Basic/>
+            </div>
+            
+          </div>
       </div>
     )
   }

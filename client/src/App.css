@@ -177,3 +177,46 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.importData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin-top: 200px;
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
+}
+
+.src {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+
+}
+
+.card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  
+}
+.back{
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+}
+.name {
+  font-size: 30px;
+}
+
+.bioInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
