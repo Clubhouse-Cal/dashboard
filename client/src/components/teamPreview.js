@@ -8,7 +8,7 @@ export class teamPreview extends Component {
     return (
       <div className = "teamPreview">
           <div className = "teamName">
-            <Header as='h4'>{this.props.school} </Header>
+            <Header as='h3'>{this.props.school} </Header>
             <p> ( 1-0 )</p>
           </div>
 

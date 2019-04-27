@@ -23,6 +23,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 100px;
 }
 
 .bar {
@@ -75,15 +76,13 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* font-size: 10px; */
+  font-size: 18px;
   text-align: center;
 }
 
 .playerCard {
   margin: 10px;
   /* font-size: 10px; */
-  
-
 }
 
 .playerScroll {
@@ -195,9 +194,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-items: center; */
   margin-top: 200px;
-  /* background-color: red; */
   height: 100%;
   width: 100%;
 }
@@ -239,10 +236,6 @@ a {
   margin-top: 50px;
 }
 
-.playerName {
-  font-size: 20px;
-}
-
 .generateButton {
   margin-top: 100px;
   background-color: #003366;
@@ -273,4 +266,5 @@ a {
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
+  margin-top: 50px;
 }

@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Button,
-  Form,
-  Image
-} from 'semantic-ui-react';
-import { withRouter } from 'react-router-dom';
+import { Button, Form, Image } from 'semantic-ui-react';
 
 class Login extends Component {
     constructor(props) {
@@ -45,4 +40,4 @@ class Login extends Component {
     }
 }
 
-export default withRouter(Login);
+export default Login;

@@ -38,17 +38,5 @@ export class Menu extends Component {
     )
   }
 }
-// const calStyle = {
-//   flex: 1,
-//   flexDirection: 'row',
-//   alignItems: 'center'
 
-// }
-const listStyle = {
-  flex: 1,
-  backgroundColor: 'red',
-  flexDirection: 'row',
-  justifyContent: 'space-between'
-
-}
 export default Menu
