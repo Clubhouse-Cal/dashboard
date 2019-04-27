@@ -16,14 +16,9 @@ export class nextMatchup extends Component {
             Utah
           </p>
         </div>
-        <div className = "startPitchTitle">
-          <p> <b> Starting Pitcher </b></p>
-        </div>
-        
+        <Header as='h2'>Starting Pitcher</Header>
         <Image src = "/images/photos/armansabouri.jpg"></Image>
-        <div className = "playerName">
-        <p>Arman Sabouri</p>
-        </div>
+        <Header as='h3'>Arman Sabouri</Header>
         
         <div className = "generateButton">
           <Link to = './pitcherAnalysis'>
@@ -32,7 +27,6 @@ export class nextMatchup extends Component {
           </div>
          
           </Link>
-        
         </div>
     </div>
     )
