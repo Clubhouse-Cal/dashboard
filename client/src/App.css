@@ -75,10 +75,13 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* font-size: 10px; */
+  text-align: center;
 }
 
 .playerCard {
   margin: 10px;
+  /* font-size: 10px; */
   
 
 }
@@ -231,8 +234,13 @@ a {
   align-items: center;
 }
 
+.startPitchTitle {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
 .playerName {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .generateButton {
@@ -250,4 +258,19 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
+  width: 100%;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
 }

@@ -20,13 +20,23 @@ export class nextMatchup extends Component {
         <Image src = "/images/photos/armansabouri.jpg"></Image>
         <Header as='h3'>Arman Sabouri</Header>
         
-        <div className = "generateButton">
-          <Link to = './pitcherAnalysis'>
-          <div className = "text">
-            View Pitcher Analysis
+        <div className = 'buttons'>
+          <div className = "generateButton">
+            <Link to = './pitcherAnalysis'>
+            <div className = "text">
+              View Pitcher Analysis
+            </div>
+          
+            </Link>
           </div>
-         
-          </Link>
+          <div className = "generateButton">
+            <Link to = './pitcherAnalysis'>
+            <div className = "text">
+              View Player Positioning
+            </div>
+          
+            </Link>
+          </div>
         </div>
     </div>
     )

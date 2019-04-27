@@ -15,7 +15,16 @@ export class pitcherAnalytics extends Component {
             Utah
           </p>
         </div>
-        <Image src = "/images/pitcherAnalysis.png" width = '800px'></Image>
+        <div className = "row1">
+          <Image src = "/images/arman.png" width = '300px' height = "400px"></Image>
+          <Image src = "/images/spraychart.png" width = '400px' height = "400px"></Image>
+        </div>
+        <div className = "row1">
+          <Image src = "/images/swingrate.png" width = '400px' height = "400px"></Image>
+          <Image src = "/images/whiffrate.png" width = '400px' height = "400px"></Image>
+        </div>
+        
+        
       </div>
     )
   }
